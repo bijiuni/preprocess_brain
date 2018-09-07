@@ -2,13 +2,14 @@
 
 This is a short tutorial created by Zach Lyu about numpy library and preprocessing MRI 3D brain images
 
-##Objective
+## Objective
 
 At the end of this self-learning lab, you should be able to:
 * Understand the simple usage of NumPy library in Python.
 * Please note that this lab uses Python3 IDLE
 
-##Section 1. Background knowledge NumPy array
+
+## Section 1. Background knowledge NumPy array
 
 NumPy is a fundamental package in Python designed specifically for scientific
 computing. In this lab, we focus on its powerful function in dealing with
@@ -24,8 +25,7 @@ array has only one axis. Note that the elements are separated by commas.
 The following array represents nine integers in a cube. How many axes does it have?
 
 ```
-[[[1,
-2], [3, 4]], [[5, 6], [7, 8]]]
+[[[1, 2], [3, 4]], [[5, 6], [7, 8]]]
 ```
 
 Once we define the above function, we can use statements like the following to find
@@ -34,30 +34,35 @@ Answer: The array has three axes. All of them has a length of 2.
 In NumPy, the array class is called ndarray. The elements in the ndarray are indexed
 by a tuple of positive integers. Here are some of the attributes of an ndarrary object.
 
-ndarray.ndim The number of axes of the array
-ndarray.shape A tuple of integers indicating the dimensions of the array
-ndarray.size The total number of elements in an array
-ndarray.dtype The type of elements in an array
+**ndarray.ndim** The number of axes of the array
+**ndarray.shape** A tuple of integers indicating the dimensions of the array
+**ndarray.size** The total number of elements in an array
+**ndarray.dtype** The type of elements in an array
 
+```
 _Note:_ the dtype of the ndarray can be standard Python types, such as int, float or NumPy
 specific types, like numpy.int32, numpy.int16, and numpy.float64.
+```
 
-###Try it yourself
 
- Open the Python file ~\numpy\Background.py
- Remember the import function mentioned in the previous sessions? What does np
+
+### Try it yourself
+
+* Open the Python file ~\numpy\Background.py
+* Remember the import function mentioned in the previous sessions? What does np
 mean in this context?
-
+
 
 We can see that a numpy array can simply be created
 using np.array([content of the array]).
 
- Follow the instructions and run the module.
- Uncomment the last part and replace all ##replaceme## untill all results are True.
-Materials designed by Lv Ruyi for HKU COMP2123.
+* Follow the instructions and run the module.
+* Uncomment the last part and replace all ##replaceme## untill all results are True.
 
 
-##Section 2. Creation and Basic Operations
+
+
+## Section 2. Creation and Basic Operations
 
 In the previous section, we showed you that an array can be created using np.array.
 Here are some other ways to create a NumPy array:
@@ -73,14 +78,15 @@ np.array( [ [ 0., 0., 0. ], [ 0., 0., 0. ] ] )
 The dots at the end of the elements show that the dtype of the array is float. In this
 case, it is numpy.float64.
 
- The ones function works the same. It creates an array full of ones.
- Remember in previous lab we have learned the function range. NumPy provides a
+* The ones function works the same. It creates an array full of ones.
+
+* Remember in previous lab we have learned the function range. NumPy provides a
 function arange that works the same with range except that it returns an array
 instead of a list. For example, the following two commands have the same effect.
 
 ```
 np.arange(0, 20, 5)
-
+
 np.array( [ 0, 5, 10, 15 ] )
 ```
 
@@ -138,10 +144,14 @@ float64
 float64
 ```
 
-Q: We see that the plus function is applied to the two arrays elementwise, but why is
-the data type of c float64 instead of int32?
+**Q: We see that the plus function is applied to the two arrays elementwise, but why is
+the data type of c float64 instead of int32?**
+
 A: This is called upcasting. The type of the resulting array always corresponds to the
 more precise one.
+
+
+
 How can we do matrix multiplication?
 
 ```
@@ -176,7 +186,7 @@ Arithmetic operations also include **(power), <, > etc. We will now experiment w
 some of them.
 
 
-Try it yourself
+## Try it yourself
 
 Open the Python file ~\
 numpy\Basic.py
@@ -187,7 +197,12 @@ appropriate demand
 Does the final results match your guess?
 
 
-##Section 3. Indexing, Slicing and Iterating
+
+
+## Section 3. Indexing, Slicing and Iterating
+
+
+
 We have now learned how to create, print NumPy arrays and perform arithmetic
 operations on them. Now it is time for you to do some self-studying. The ability to
 look for information on your own is important and will be helpful in academic and
@@ -201,7 +216,7 @@ following:
 3. How to iterate over part or whole of the array?
 
 
-##Checkpoint 7.X (Please submit your answer to Moodle.)
+## Checkpoint 7.X (Please submit your answer to Moodle.)
 
 Open the Python file ~\numpy\MRI.py
 NumPy library is commonly used for data-preprocessing. The objective of this
@@ -224,6 +239,6 @@ For the large MRI image the shape change should be:
 (130, 130, 110)--->(120, 120, 110)--->(120, 120, 120)
 
 
-##Acknowledgement
- Special thanks to Kit for the template of this lab
- The MRI images are legally obtained through INDI sharing scheme.
+## Acknowledgement
+
+* The MRI images are legally obtained through INDI sharing scheme.
