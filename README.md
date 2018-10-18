@@ -60,7 +60,7 @@ using np.array([content of the array]).
 * Uncomment the last part and replace all ##replaceme## untill all results are True.
 
 
-
+<br>
 
 ## Section 2. Creation and Basic Operations
 
@@ -185,6 +185,7 @@ that we are looking for
 Arithmetic operations also include **(power), <, > etc. We will now experiment with
 some of them.
 
+<br>
 
 ## Try it yourself
 
@@ -215,8 +216,9 @@ following:
 
 3. How to iterate over part or whole of the array?
 
+<br>
 
-## Checkpoint 7.X (Please submit your answer to Moodle.)
+## Checkpoint Exercise
 
 Open the Python file ~\numpy\MRI.py
 NumPy library is commonly used for data-preprocessing. The objective of this
