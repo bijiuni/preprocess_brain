@@ -2,6 +2,8 @@
 
 This is a short tutorial created by Zach Lyu about numpy library and preprocessing MRI 3D brain images
 
+<br>
+
 ## Objective
 
 At the end of this self-learning lab, you should be able to:
@@ -97,6 +99,7 @@ the first command below specify that we
 want nine numbers from 0 to 2. It is equivelant
 to the second command below.
 
+
 ```
 np.linspace(0, 2, 4)
 ```
@@ -113,6 +116,7 @@ np.array( [ 0., 0.5, 1, 1.5, 2.] )
 When creating an array using the above methods, we can specify the datatype by
 simply adding the dtype argument. For example, if we want an array full of ones with
 shape (3,3) and the data type is integer, we can use the following command.
+
 
 ```
 np.ones( (3,3), dtype=int )
@@ -143,6 +147,8 @@ int32
 float64
 float64
 ```
+
+<br>
 
 **Q: We see that the plus function is applied to the two arrays elementwise, but why is
 the data type of c float64 instead of int32?**
@@ -240,6 +246,7 @@ For the small MRI image the shape change should be:
 For the large MRI image the shape change should be:
 (130, 130, 110)--->(120, 120, 110)--->(120, 120, 120)
 
+<br> 
 
 ## Acknowledgement
 
