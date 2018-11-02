@@ -247,7 +247,7 @@ For the large MRI image the shape change should be:
 (130, 130, 110)--->(120, 120, 110)--->(120, 120, 120)
 
 
-[sample image](https://github.com/bijiuni/preprocess_brain/blob/master/img1.JPG)
+![sample image](https://github.com/bijiuni/preprocess_brain/blob/master/img1.JPG)
 <br> 
 
 ## Acknowledgement
